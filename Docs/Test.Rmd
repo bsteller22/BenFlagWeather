@@ -1,0 +1,22 @@
+---
+title: "Test"
+output: html_document
+---
+
+```{r}
+library(BenFlagWeather)
+library(tidyverse)
+```
+
+```{r}
+Flagstaff_Weather <- Flagstaff_Weather %>%
+  mutate(DATE = ymd(DATE))
+```
+
+
+```{r}
+Flagstaff_Weather %>%
+  ggplot(aes(x = DATE, y = PRCP)) +
+  geom_line()
+```
+

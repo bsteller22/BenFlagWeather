@@ -1,0 +1,12 @@
+```{r}
+library(readxl)
+```
+
+```{r}
+read.csv("C:/Users/benja/OneDrive/Documents/STA 445/Data-Raw/Pulliam_Airport_Weather.csv")
+```
+
+```{r}
+Flagstaff_Weather <- read.csv("C:/Users/benja/Downloads/Pulliam_Airport_Weather.csv")
+```
+
